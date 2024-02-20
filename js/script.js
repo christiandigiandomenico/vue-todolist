@@ -10,23 +10,23 @@ createApp({
 
                 {
                     text: 'Comprare le patate',
-                    done: false
+                    done: false,
                 }, {
                     text: 'Fare esercizio',
-                    done: true
+                    done: true,
                 }, {
                     text: 'Portare fuori il cane',
-                    done: false
+                    done: false,
                 }, {
                     text: 'Contattare Cassone',
-                    done: false
+                    done: false,
                 }, {
                     text: 'Ricordare a Cassone che non mi sta simpatico',
-                    done: false
+                    done: false,
                 }, {
                     text: 'Aggiustare il lavandino',
-                    done: true
-                }
+                    done: true,
+                },
 
             ]
 
@@ -52,9 +52,9 @@ createApp({
         todoHandler(currentTask) {
 
             if (currentTask.done == false) {
-                currentTask.done == true;
+                currentTask.done = true;
             } else {
-                currentTask.done == false;
+                currentTask.done = false;
             }
 
         },
