@@ -1,3 +1,8 @@
 .list-group-item.true span {
     text-decoration: line-through;
 }
+
+.fa-solid {
+    cursor: pointer;
+    font-size: 20px;
+}

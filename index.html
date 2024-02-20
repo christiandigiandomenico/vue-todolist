@@ -28,7 +28,7 @@
         <ul class="list-group w-50">
             <li v-for="(currentTask, index) in tasks" class="list-group-item d-flex justify-content-between"
                 :class="currentTask.done == true ? 'true' : '' "><span>{{currentTask.text}}</span> <i
-                    class="fa-solid fa-circle-xmark"></i></li>
+                    @click="deleteTask(index)" class="fa-solid fa-circle-xmark"></i></li>
         </ul>
 
     </div>
