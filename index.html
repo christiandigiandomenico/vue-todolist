@@ -26,9 +26,10 @@
         </h1>
 
         <ul class="list-group w-50">
-            <li v-for="(currentTask, index) in tasks" class="list-group-item d-flex justify-content-between"
-                :class="currentTask.done == true ? 'true' : '' "><span>{{currentTask.text}}</span> <i
-                    @click="deleteTask(index)" class="fa-solid fa-circle-xmark"></i></li>
+            <li v-for="(currentTask, index) in tasks" @click="todoHandler(currentTask)"
+                class="list-group-item d-flex justify-content-between" :class="currentTask.done == true ? 'true' : '' ">
+                <span>{{currentTask.text}}</span> <i @click="deleteTask(index)" class="fa-solid fa-circle-xmark"></i>
+            </li>
         </ul>
 
         <div id="add-task" class="py-4 w-50">

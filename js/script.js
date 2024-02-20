@@ -49,5 +49,15 @@ createApp({
 
         },
 
+        todoHandler(currentTask) {
+
+            if (currentTask.done == false) {
+                currentTask.done == true;
+            } else {
+                currentTask.done == false;
+            }
+
+        },
+
     }
 }).mount("#app");
